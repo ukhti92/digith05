@@ -11,24 +11,21 @@
 	<section class="header">
 		<nav>
 			<h2>DigitH05</h2>
-			<div class="nav-links" id="nav-links">
-				<ul>
-					<li><a href="">BERANDA</a></li>
-					<li><a href="">SERVICE</a></li>
-					<li><a href="">PROFIL TIM</a></li>
-					<li><a href="">KONTAK</a></li>
-				</ul>
-			</div>
-			<!-- HUMBERGER MENU -->
-			<div class="menu-toggle">
-				<input type="checkbox">
-				<span></span>
-				<span></span>
-				<span></span>
-			</div>
 
+			<!-- Navbar -->
+			<div class="nav-links" id="navLinks">
+				<i class="fa fa-times" onclick="hideMenu()"></i>
+					<ul>
+						<li><a href="">BERANDA</a></li>
+						<li><a href="">SERVICE</a></li>
+						<li><a href="">PROFIL TIM</a></li>
+						<li><a href="">KONTAK</a></li>
+					</ul>
+			</div>
+			<i class="fa fa-bars" onclick="showMenu()"></i>
 		</nav>
 
+		<!-- Main -->
 		<div class="text-box">
 			<h1>JASA PEMBUATAN WEBSITE INSTAN</h1>
 			<p>Website anda siap mendunia hanya dalam 48 jam</p>
@@ -50,5 +47,18 @@
     </div>
 </div>
 </footer>
+	
+	<!-- Js untuk toggle menu -->
+		<script>
+
+			var navLinks = document.getElementById("navLinks");
+
+			function showMenu(){
+				navLinks.style.right = "0";
+			}
+			function hideMenu(){
+				navLinks.style.right = "-200px";
+			}
+		</script>
 </body>
 </html>
