@@ -1,9 +1,9 @@
 nav .fa{
-	display: none;
+    display: none;
 }
 
-@media (max-width: 700px){
-	    .text-box h1{
+@media(max-width: 700px){
+    .text-box h1{
         font-size: 20px;
     }
     .nav-links ul li{
@@ -22,12 +22,17 @@ nav .fa{
     }
     nav .fa{
         display: block;
-        color: #fff;
+        color: rgb(199, 195, 195);
         margin: 10px;
         font-size: 22px;
         cursor: pointer;
     }
     .nav-links ul{
         padding: 30px;
-    } 
+    }
+
+    /* courses-col */
+    .row{
+        flex-direction: column;
+    }
 }
